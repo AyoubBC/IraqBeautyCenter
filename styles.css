@@ -1,89 +1,148 @@
 /* Global Styles */
 * {
-  margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-  background: linear-gradient(to bottom, #f5f5f5, #d8d8d8); color: #333;
+  background: linear-gradient(to bottom, #f5f5f5, #d8d8d8);
+  color: #333;
 }
 
 /* Container */
 .container {
-  width: 90%; max-width: 1000px; margin: 0 auto;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /* Header */
 header {
-  background: linear-gradient(to right, #d8b4a6, #a67c52); padding: 2rem 0; text-align: center;
+  background: linear-gradient(to right, #d8b4a6, #a67c52);
+  padding: 2rem 0;
+  text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-  font-family: 'Playfair Display', serif; font-size: 2rem; color: #fff; letter-spacing: 2px;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 2px;
 }
 
 nav a {
-  margin: 0 1rem; color: #fff; font-size: 0.9rem; font-weight: 500; text-decoration: none;
+  margin: 0 1rem;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 nav a:hover {
-  color: #f1f1f1; border-bottom: 2px solid #f1f1f1;
+  color: #f1f1f1;
+  border-bottom: 2px solid #f1f1f1;
 }
 
 /* Services Section */
 #services {
-  padding: 4rem 0; text-align: center; background: linear-gradient(to top, #fff, #d8b4a6);
+  padding: 4rem 0;
+  text-align: center;
+  background: linear-gradient(to top, #fff, #d8b4a6);
 }
 
 #services h2 {
-  font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #fff; margin-bottom: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
 }
 
 .services-container {
-  display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .service {
-  width: 100%; max-width: 200px; padding: 1rem; background-color: #fff; border-radius: 12px; box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); text-align: center;
+  width: 100%;
+  max-width: 200px;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service:hover {
-  transform: scale(1.05); box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
 }
 
 .service img {
-  width: 100%; height: 120px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 .service h3 {
-  font-family: 'Playfair Display', serif; font-size: 1rem; color: #333; text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  color: #333;
+  text-transform: uppercase;
 }
 
 /* About Section */
 #about {
-  padding: 4rem 0; text-align: center;
+  padding: 4rem 0;
+  text-align: center;
 }
 
 #about p {
-  font-size: 0.95rem; line-height: 1.4; color: #555; max-width: 600px; margin: 0 auto;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /* Appointment Section */
 #appointment {
-  background-color: #f5f5f5; padding: 4rem 0; text-align: center;
+  background-color: #f5f5f5;
+  padding: 4rem 0;
+  text-align: center;
 }
 
 form {
-  max-width: 400px; margin: 0 auto; padding: 1.5rem; background-color: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 form label, form input, form select, form button {
-  width: 100%; padding: 1rem; margin-bottom: 1.2rem; border-radius: 8px; border: 1px solid #ddd; font-size: 0.9rem;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 0.9rem;
 }
 
 form button {
-  background-color: #b08f82; color: #fff; font-weight: bold; cursor: pointer; transition: background-color 0.3s;
+  background-color: #b08f82;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 form button:hover {
@@ -92,38 +151,48 @@ form button:hover {
 
 /* Contact Section */
 #contact {
-  padding: 4rem 0; text-align: center;
+  padding: 4rem 0;
+  text-align: center;
 }
 
 .contact-links a {
-  margin: 0.5rem; padding: 1rem 2rem; background-color: #b08f82; color: #fff; border-radius: 30px; font-weight: 600; text-decoration: none;
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: #b08f82;
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
   transition: background-color 0.3s, transform 0.3s;
 }
 
 .contact-links a:hover {
-  background-color: #a67c52; transform: translateY(-3px);
+  background-color: #a67c52;
+  transform: translateY(-3px);
 }
 
 /* Footer */
 footer {
-  padding: 1.5rem 0; background-color: #fff; text-align: center; color: #c18e56; box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 0;
+  background-color: #fff;
+  text-align: center;
+  color: #c18e56;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer p {
   font-size: 0.9rem;
 }
 
-/* Responsive Design */
-
-/* For small mobile devices (max-width: 480px) */
+/* Mobile responsive adjustments */
 @media (max-width: 480px) {
-  header h1 { font-size: 1.5rem; } /* Smaller header font */
-  nav a { font-size: 0.8rem; margin: 0 0.5rem; } /* Smaller nav links */
-  
+  header h1 { font-size: 1.5rem; }  /* Header font size for smaller screens */
+  nav a { font-size: 0.8rem; margin: 0 0.5rem; } /* Adjust nav links */
+
   .services-container { flex-direction: column; align-items: center; }
-  .service { width: 90%; } /* Adjust service box to fit screen */
+  .service { width: 90%; max-width: 100%; }  /* Full width services */
   
-  #about p { font-size: 0.9rem; } /* Smaller text */
-  form { padding: 1rem; } /* Reduced padding in form */
-  .contact-links a { padding: 0.8rem 1.5rem; font-size: 0.9rem; } /* Smaller buttons */
+  #about p { font-size: 0.9rem; }  /* Adjust paragraph size */
+  form { padding: 1rem; }  /* Reduce form padding */
+  .contact-links a { padding: 0.8rem 1.5rem; font-size: 0.9rem; } /* Adjust button size */
 }
