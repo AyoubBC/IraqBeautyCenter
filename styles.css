@@ -3,146 +3,165 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif; /* Clean sans-serif font */
 }
 
 body {
-  background: linear-gradient(to bottom, #f5f5f5, #d8d8d8);
+  background: linear-gradient(to bottom, #f5f5f5, #d8d8d8); /* Light gradient background */
   color: #333;
 }
 
 /* Container */
 .container {
   width: 90%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 /* Header */
 header {
-  background: linear-gradient(to right, #d8b4a6, #a67c52);
-  padding: 2rem 0;
-  text-align: center;
+  background-color: #ffffff;
+  padding: 3rem 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-image: linear-gradient(to right, #d8b4a6, #a67c52); /* Gradient background for header */
 }
 
 header h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #fff;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+}
+
+nav {
+  margin-top: 1.5rem;
 }
 
 nav a {
-  margin: 0 1rem;
+  margin: 0 2rem;
   color: #fff;
-  font-size: 0.9rem;
   font-weight: 500;
   text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1.1rem;
 }
 
 nav a:hover {
   color: #f1f1f1;
-  border-bottom: 2px solid #f1f1f1;
+  border-bottom: 2px solid #f1f1f1; /* Subtle underline effect on hover */
 }
 
 /* Services Section */
 #services {
-  padding: 4rem 0;
+  padding: 6rem 0;
+  background-color: #ffffff;
   text-align: center;
-  background: linear-gradient(to top, #fff, #d8b4a6);
+  background-image: linear-gradient(to top, #fff, #d8b4a6);
 }
 
 #services h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
-  color: #fff;
-  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
 }
 
 .services-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 2rem;
   justify-content: center;
-  gap: 1rem;
 }
 
 .service {
-  width: 100%;
-  max-width: 200px;
-  padding: 1rem;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  background-color: #ffffff;
+  width: 250px;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
 }
 
 .service:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .service img {
   width: 100%;
-  height: 120px;
+  height: 180px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-bottom: 1rem;
 }
 
 .service h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #333;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* About Section */
 #about {
-  padding: 4rem 0;
+  padding: 6rem 0;
   text-align: center;
 }
 
 #about p {
-  font-size: 0.95rem;
-  line-height: 1.4;
+  font-size: 1.1rem;
+  line-height: 1.6;
   color: #555;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
 /* Appointment Section */
 #appointment {
   background-color: #f5f5f5;
-  padding: 4rem 0;
+  padding: 6rem 0;
   text-align: center;
 }
 
 form {
-  max-width: 400px;
+  max-width: 450px;
   margin: 0 auto;
-  padding: 1.5rem;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
 }
 
-form label, form input, form select, form button {
+form:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+form input, form select, form button {
   width: 100%;
-  padding: 1rem;
-  margin-bottom: 1.2rem;
+  padding: 1.2rem;
+  margin-bottom: 1.8rem;
   border-radius: 8px;
   border: 1px solid #ddd;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 form button {
   background-color: #b08f82;
   color: #fff;
   font-weight: bold;
+  transition: background-color 0.3s ease;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 form button:hover {
@@ -151,48 +170,130 @@ form button:hover {
 
 /* Contact Section */
 #contact {
-  padding: 4rem 0;
+  padding: 6rem 0;
   text-align: center;
 }
 
 .contact-links a {
-  margin: 0.5rem;
-  padding: 1rem 2rem;
+  margin: 0.8rem;
+  padding: 1.2rem 2.5rem;
   background-color: #b08f82;
   color: #fff;
   border-radius: 30px;
   font-weight: 600;
   text-decoration: none;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .contact-links a:hover {
   background-color: #a67c52;
-  transform: translateY(-3px);
+  transform: translateY(-5px);
 }
 
 /* Footer */
 footer {
-  padding: 1.5rem 0;
-  background-color: #fff;
+  padding: 2rem 0;
+  background-color: #ffffff;
   text-align: center;
   color: #c18e56;
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer p {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
-/* Mobile responsive adjustments */
-@media (max-width: 1000px) {
-  header h1 { font-size: 4rem; }  /* Header font size for smaller screens */
-  nav a { font-size: 4rem; margin: 0 4rem; } /* Adjust nav links */
+/* Responsive Design */
 
-  .services-container { flex-direction: column; align-items: center; }
-  .service { width: 80%; max-width: 80%; }  /* Full width services */
-  
-  #about p { font-size: 2rem; }  /* Adjust paragraph size */
-  form { padding: 2rem; }  /* Reduce form padding */
-  .contact-links a { padding: 2rem 2rem; font-size: 2rem; } /* Adjust button size */
+/* For iPhone 10 to iPhone 13 (375px to 430px width) */
+@media (max-width: 430px) {
+  header h1 {
+    font-size: 2.4rem; /* Slightly smaller header font */
+  }
+
+  nav a {
+    font-size: 1rem; /* Adjust navigation link font size */
+    margin: 0 1rem; /* Adjust margin between links */
+  }
+
+  .services-container {
+    flex-direction: column; /* Stack services vertically */
+    align-items: center; /* Center services */
+  }
+
+  .service {
+    width: 85%; /* Adjust service box width */
+  }
+
+  #about p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+
+  form {
+    padding: 2rem; /* Reduce padding inside form */
+  }
+
+  .contact-links a {
+    padding: 1rem 2rem; /* Adjust button padding */
+  }
+}
+
+/* For iPhone 14 and newer (375px to 430px width) */
+@media (max-width: 430px) {
+  header h1 {
+    font-size: 2rem; /* Reduce font size for smaller screens */
+  }
+
+  nav a {
+    font-size: 1rem; /* Adjust navigation link font size */
+    margin: 0 1rem; /* Adjust margin between links */
+  }
+
+  .services-container {
+    flex-direction: column; /* Stack services vertically */
+    align-items: center; /* Center services */
+  }
+
+  .service {
+    width: 80%; /* Adjust service box width */
+  }
+
+  #about p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+
+  form {
+    padding: 1.8rem; /* Reduce padding inside form */
+  }
+
+  .contact-links a {
+    padding: 1rem 2rem; /* Adjust button padding */
+  }
+}
+
+/* For iPhone 16 or large iPhone devices (width 430px) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem; /* Further reduce font size */
+  }
+
+  nav a {
+    font-size: 0.9rem; /* Further reduce navigation font size */
+  }
+
+  .service {
+    width: 100%; /* Full width for services on small screens */
+  }
+
+  .service img {
+    height: 150px; /* Adjust service image height */
+  }
+
+  form {
+    padding: 1.5rem; /* Further reduce padding in form */
+  }
+
+  .contact-links a {
+    padding: 1rem; /* Adjust button padding */
+  }
 }
