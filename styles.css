@@ -36,10 +36,13 @@ header h1 {
 
 nav {
   margin-top: 1.5rem;
+  display: flex; /* Use flexbox to align nav items */
+  justify-content: center; /* Center the nav items */
+  align-items: center; /* Vertically align the items */
+  gap: 1rem; /* Add spacing between the links */
 }
 
 nav a {
-  margin: 0 2rem;
   color: #fff;
   font-weight: 500;
   text-decoration: none;
@@ -205,15 +208,22 @@ footer p {
 
 /* Responsive Design */
 
-/* For iPhone 10 to iPhone 13 (375px to 430px width) */
+/* For devices with max-width 430px */
 @media (max-width: 430px) {
   header h1 {
     font-size: 2.4rem; /* Slightly smaller header font */
   }
 
+  nav {
+    flex-direction: row; /* Ensure nav items are aligned horizontally */
+    justify-content: space-between; /* Distribute space evenly between items */
+    gap: 1rem; /* Add space between links */
+    padding: 0 1rem; /* Add horizontal padding to prevent links from touching edges */
+  }
+
   nav a {
     font-size: 1rem; /* Adjust navigation link font size */
-    margin: 0 1rem; /* Adjust margin between links */
+    margin: 0; /* Remove margin */
   }
 
   .services-container {
@@ -238,62 +248,10 @@ footer p {
   }
 }
 
-/* For iPhone 14 and newer (375px to 430px width) */
-@media (max-width: 430px) {
-  header h1 {
-    font-size: 2rem; /* Reduce font size for smaller screens */
-  }
-
-  nav a {
-    font-size: 1rem; /* Adjust navigation link font size */
-    margin: 0 1rem; /* Adjust margin between links */
-  }
-
-  .services-container {
-    flex-direction: column; /* Stack services vertically */
-    align-items: center; /* Center services */
-  }
-
-  .service {
-    width: 80%; /* Adjust service box width */
-  }
-
-  #about p {
-    font-size: 0.9rem; /* Adjust paragraph font size */
-  }
-
-  form {
-    padding: 1.8rem; /* Reduce padding inside form */
-  }
-
-  .contact-links a {
-    padding: 1rem 2rem; /* Adjust button padding */
-  }
-}
-
-/* For iPhone 16 or large iPhone devices (width 430px) */
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 1.8rem; /* Further reduce font size */
-  }
-
-  nav a {
-    font-size: 0.9rem; /* Further reduce navigation font size */
-  }
-
-  .service {
-    width: 100%; /* Full width for services on small screens */
-  }
-
-  .service img {
-    height: 150px; /* Adjust service image height */
-  }
-
-  form {
-    padding: 1.5rem; /* Further reduce padding in form */
-  }
-
-  .contact-links a {
-    padding: 1rem; /* Adjust button padding */
+/* For larger screens, use the default layout */
+@media (min-width: 431px) {
+  nav {
+    justify-content: flex-start; /* Align nav items to the left */
+    gap: 2rem; /* Adjust space between items */
   }
 }
