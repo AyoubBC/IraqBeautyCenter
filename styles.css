@@ -1,99 +1,157 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beauty Center</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Beauty Center</h1>
-    </div>
-  </header>
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
 
-  <!-- Navigation Section -->
-  <nav class="main-nav">
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#appointment">Book Appointment</a>
-    <a href="#contact">Contact</a>
-  </nav>
+body {
+  background: linear-gradient(to bottom, #f5f5f5, #d8d8d8);
+  color: #333;
+}
 
-  <section id="services">
-    <div class="container">
-      <h2>Our Services</h2>
-      <div class="services-container">
-        <div class="service">
-          <a href="page1.html">
-            <img src="website2.jpg" alt="Botox & Fillers">
-            <h3>Botox & Fillers</h3>
-          </a>
-        </div>
-        <div class="service">
-          <img src="website1.jpg" alt="Dental Care">
-          <h3>Dental Care</h3>
-        </div>
-        <div class="service">
-          <img src="test1.jpg" alt="Facials">
-          <h3>Facials</h3>
-        </div>
-        <div class="service">
-          <img src="website3.jpg" alt="Laser Hair Removal">
-          <h3>Laser Hair Removal</h3>
-        </div>
-      </div>
-    </div>
-  </section>
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  <section id="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>We offer luxurious and personalized beauty treatments to enhance your natural radiance. Our highly skilled professionals are here to make you feel your best.</p>
-    </div>
-  </section>
+/* Header */
+header {
+  background-color: #ffffff;
+  padding: 3rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-image: linear-gradient(to right, #d8b4a6, #a67c52);
+}
 
-  <section id="appointment">
-    <div class="container">
-      <h2>Book an Appointment</h2>
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="date">Date</label>
-        <input type="date" id="date" name="date" required>
-        
-        <label for="service">Service</label>
-        <select id="service" name="service">
-          <option>Botox & Fillers</option>
-          <option>Dental Care</option>
-          <option>Facials</option>
-          <option>Laser Hair Removal</option>
-        </select>
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #fff;
+  letter-spacing: 3px;
+}
 
-        <button type="submit">Book Now</button>
-      </form>
-    </div>
-  </section>
+/* Navigation Section */
+.main-nav {
+  text-align: center;
+  margin: 1.5rem 0;
+  background-color: #a67c52;
+  padding: 1rem;
+}
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <div class="contact-links">
-        <a href="https://wa.me/123456789" target="_blank">WhatsApp</a>
-        <a href="https://instagram.com" target="_blank">Instagram</a>
-        <a href="tel:+123456789">Call Us</a>
-      </div>
-    </div>
-  </section>
+.main-nav a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 1.5rem;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 Beauty Center</p>
-    </div>
-  </footer>
-</body>
-</html>
+.main-nav a:hover {
+  color: #f1f1f1;
+}
+
+/* Services Section */
+#services {
+  padding: 6rem 0;
+  text-align: center;
+  background-image: linear-gradient(to top, #fff, #d8b4a6);
+}
+
+#services h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.service {
+  background-color: #ffffff;
+  width: 250px;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.service img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Contact Section */
+#contact {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.contact-links a {
+  display: inline-block;
+  margin: 0.8rem;
+  padding: 1rem 2rem;
+  background-color: #b08f82;
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-links a:hover {
+  background-color: #a67c52;
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  padding: 2rem 0;
+  background-color: #ffffff;
+  text-align: center;
+  color: #c18e56;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Responsive Design for mobile view (max-width: 768px) */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .main-nav a {
+    font-size: 1rem;
+    margin: 0 1rem;
+  }
+
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    width: 90%;
+  }
+
+  #about p,
+  #contact .contact-links a {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
