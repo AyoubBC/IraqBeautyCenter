@@ -36,13 +36,10 @@ header h1 {
 
 nav {
   margin-top: 1.5rem;
-  display: flex; /* Use flexbox to align nav items */
-  justify-content: center; /* Center the nav items */
-  align-items: center; /* Vertically align the items */
-  gap: 1rem; /* Add spacing between the links */
 }
 
 nav a {
+  margin: 0 2rem;
   color: #fff;
   font-weight: 500;
   text-decoration: none;
@@ -208,22 +205,34 @@ footer p {
 
 /* Responsive Design */
 
-/* For devices with max-width 430px */
-@media (max-width: 430px) {
+/* For tablets and smaller laptops (max-width: 1200px) */
+@media (max-width: 1200px) {
   header h1 {
-    font-size: 2.4rem; /* Slightly smaller header font */
+    font-size: 2.5rem; /* Adjust font size */
   }
 
-  nav {
-    flex-direction: row; /* Ensure nav items are aligned horizontally */
-    justify-content: space-between; /* Distribute space evenly between items */
-    gap: 1rem; /* Add space between links */
-    padding: 0 1rem; /* Add horizontal padding to prevent links from touching edges */
+  .service {
+    width: 220px; /* Adjust service box width */
+  }
+
+  .service h3 {
+    font-size: 1.1rem; /* Adjust service title font size */
+  }
+
+  .contact-links a {
+    padding: 1rem 2rem; /* Adjust button padding */
+  }
+}
+
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem; /* Reduce font size for smaller screens */
   }
 
   nav a {
     font-size: 1rem; /* Adjust navigation link font size */
-    margin: 0; /* Remove margin */
+    margin: 0 1rem; /* Adjust margin between links */
   }
 
   .services-container {
@@ -232,7 +241,7 @@ footer p {
   }
 
   .service {
-    width: 85%; /* Adjust service box width */
+    width: 90%; /* Adjust service box width */
   }
 
   #about p {
@@ -248,10 +257,30 @@ footer p {
   }
 }
 
-/* For larger screens, use the default layout */
-@media (min-width: 431px) {
-  nav {
-    justify-content: flex-start; /* Align nav items to the left */
-    gap: 2rem; /* Adjust space between items */
+/* For very small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem; /* Further reduce font size */
+  }
+
+  nav a {
+    font-size: 0.9rem; /* Further reduce navigation font size */
+    padding: 0.8rem 1rem; /* Reduce padding for better space */
+  }
+
+  .service {
+    width: 100%; /* Full width for services on small screens */
+  }
+
+  .service img {
+    height: 150px; /* Adjust service image height */
+  }
+
+  form {
+    padding: 1.5rem; /* Further reduce padding in form */
+  }
+
+  .contact-links a {
+    padding: 1rem; /* Adjust button padding */
   }
 }
