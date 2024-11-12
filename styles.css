@@ -185,12 +185,12 @@ footer p {
 }
 
 /* Mobile responsive adjustments */
-@media (max-width: 860px) {
-  header h1 { font-size: 2rem; }  /* Header font size for smaller screens */
-  nav a { font-size: 2rem; margin: 0 2rem; } /* Adjust nav links */
+@media (max-width: 1000px) {
+  header h1 { font-size: 4rem; }  /* Header font size for smaller screens */
+  nav a { font-size: 4rem; margin: 0 4rem; } /* Adjust nav links */
 
   .services-container { flex-direction: column; align-items: center; }
-  .service { width: 80%; max-width: 100%; }  /* Full width services */
+  .service { width: 80%; max-width: 80%; }  /* Full width services */
   
   #about p { font-size: 2rem; }  /* Adjust paragraph size */
   form { padding: 2rem; }  /* Reduce form padding */
