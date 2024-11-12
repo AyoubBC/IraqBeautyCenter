@@ -3,11 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif; /* Clean sans-serif font */
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-  background: linear-gradient(to bottom, #f5f5f5, #d8d8d8); /* Light gradient background */
+  background: linear-gradient(to bottom, #f5f5f5, #d8d8d8);
   color: #333;
 }
 
@@ -24,7 +24,7 @@ header {
   padding: 3rem 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
-  background-image: linear-gradient(to right, #d8b4a6, #a67c52); /* Gradient background for header */
+  background-image: linear-gradient(to right, #d8b4a6, #a67c52);
 }
 
 header h1 {
@@ -49,123 +49,7 @@ nav a {
 
 nav a:hover {
   color: #f1f1f1;
-  border-bottom: 2px solid #f1f1f1; /* Subtle underline effect on hover */
-}
-
-/* Services Section */
-#services {
-  padding: 6rem 0;
-  background-color: #ffffff;
-  text-align: center;
-  background-image: linear-gradient(to top, #fff, #d8b4a6);
-}
-
-#services h2 {
-  font-family: 'Playfair Display', serif;
-  color: #ffffff;
-  font-size: 2.2rem;
-  margin-bottom: 2rem;
-}
-
-.services-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-}
-
-.service {
-  background-color: #ffffff;
-  width: 250px;
-  padding: 1.5rem;
-  border-radius: 15px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
-}
-
-.service:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-}
-
-.service img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-}
-
-.service h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.2rem;
-  color: #333;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-/* About Section */
-#about {
-  padding: 6rem 0;
-  text-align: center;
-}
-
-#about p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #555;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Appointment Section */
-#appointment {
-  background-color: #f5f5f5;
-  padding: 6rem 0;
-  text-align: center;
-}
-
-form {
-  max-width: 450px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  padding: 2.5rem;
-  border-radius: 15px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-}
-
-form:hover {
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
-}
-
-form label {
-  display: block;
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  color: #333;
-}
-
-form input, form select, form button {
-  width: 100%;
-  padding: 1.2rem;
-  margin-bottom: 1.8rem;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  font-size: 1rem;
-}
-
-form button {
-  background-color: #b08f82;
-  color: #fff;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #a67c52;
+  border-bottom: 2px solid #f1f1f1;
 }
 
 /* Contact Section */
@@ -190,22 +74,9 @@ form button:hover {
   transform: translateY(-5px);
 }
 
-/* Footer */
-footer {
-  padding: 2rem 0;
-  background-color: #ffffff;
-  text-align: center;
-  color: #c18e56;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-}
+/* Responsive Design */
 
-footer p {
-  font-size: 1rem;
-}
-
-/* Adjustments for mobile devices */
-
-/* For screens with a max width of 430px (iPhone 10 to iPhone 13) */
+/* For iPhone 10 to iPhone 13 (375px to 430px width) */
 @media (max-width: 430px) {
   header h1 {
     font-size: 2.4rem; /* Slightly smaller header font */
@@ -234,6 +105,7 @@ footer p {
     max-width: 90%; /* Adjust form width on small screens */
   }
 
+  /* Contact Links */
   .contact-links a {
     padding: 1rem 2rem; /* Adjust button padding */
     font-size: 1rem; /* Ensure text is readable */
@@ -269,6 +141,7 @@ footer p {
     max-width: 95%; /* Ensure form doesn't overflow */
   }
 
+  /* Contact Links */
   .contact-links a {
     padding: 1rem 2rem; /* Adjust button padding */
   }
@@ -294,11 +167,13 @@ footer p {
 
   form {
     padding: 1.5rem; /* Further reduce padding in form */
-    max-width: 100%; /* Make sure form fits */
+    max-width: 100%; /* Ensure form fits */
   }
 
+  /* Contact Links */
   .contact-links a {
     padding: 1rem; /* Adjust button padding */
     font-size: 0.9rem; /* Adjust button text for small screens */
   }
 }
+
