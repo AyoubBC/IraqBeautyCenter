@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +29,7 @@ header {
 
 header h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 3rem;
+  font-size: 3rem; /* Default header font size */
   color: #fff;
   letter-spacing: 3px;
 }
@@ -199,7 +200,7 @@ footer {
 }
 
 footer p {
-  font-size: 1rem;
+  font-size: 1rem; /* Regular font size for footer */
 }
 
 /* Responsive Design */
@@ -227,6 +228,7 @@ footer p {
 @media (max-width: 768px) {
   header h1 {
     font-size: 2rem; /* Reduce font size for smaller screens */
+    padding: 0 1rem; /* Adjust padding for small screens */
   }
 
   nav a {
@@ -260,10 +262,12 @@ footer p {
 @media (max-width: 480px) {
   header h1 {
     font-size: 1.8rem; /* Further reduce font size */
+    padding: 0 1rem; /* Ensure no horizontal overflow */
   }
 
   nav a {
-    font-size: 0.9rem; /* Further reduce navigation font size */
+    font-size: 0.9rem; /* Reduce font size for navigation links */
+    padding: 0.8rem 1rem; /* Reduce padding for space efficiency */
   }
 
   .service {
@@ -280,5 +284,10 @@ footer p {
 
   .contact-links a {
     padding: 1rem; /* Adjust button padding */
+  }
+
+  footer p {
+    font-size: 0.8rem; /* Further reduce font size for small screens */
+    padding: 0 1rem; /* Adjust padding for small screens */
   }
 }
