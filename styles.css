@@ -203,15 +203,83 @@ footer p {
   font-size: 1rem;
 }
 
+/* Responsive Design */
 
+/* For tablets and smaller laptops (max-width: 1200px) */
+@media (max-width: 1200px) {
+  header h1 {
+    font-size: 2.5rem; /* Adjust font size */
+  }
 
+  .service {
+    width: 220px; /* Adjust service box width */
+  }
 
+  .service h3 {
+    font-size: 1.1rem; /* Adjust service title font size */
+  }
 
+  .contact-links a {
+    padding: 1rem 2rem; /* Adjust button padding */
+  }
+}
 
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem; /* Reduce font size for smaller screens */
+  }
 
+  nav a {
+    font-size: 1rem; /* Adjust navigation link font size */
+    margin: 0 1rem; /* Adjust margin between links */
+  }
 
+  .services-container {
+    flex-direction: column; /* Stack services vertically */
+    align-items: center; /* Center services */
+  }
 
+  .service {
+    width: 90%; /* Adjust service box width */
+  }
 
+  #about p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
 
+  form {
+    padding: 2rem; /* Reduce padding inside form */
+  }
 
+  .contact-links a {
+    padding: 1rem 2rem; /* Adjust button padding */
+  }
+}
 
+/* For very small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem; /* Further reduce font size */
+  }
+
+  nav a {
+    font-size: 0.9rem; /* Further reduce navigation font size */
+  }
+
+  .service {
+    width: 100%; /* Full width for services on small screens */
+  }
+
+  .service img {
+    height: 150px; /* Adjust service image height */
+  }
+
+  form {
+    padding: 1.5rem; /* Further reduce padding in form */
+  }
+
+  .contact-links a {
+    padding: 1rem; /* Adjust button padding */
+  }
+}

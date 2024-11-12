@@ -97,3 +97,79 @@ header h1 {
 .navigation-links a:hover {
     background-color: #a67c52;
 }
+
+/* Responsive Design */
+
+/* For tablets and smaller laptops (max-width: 1200px) */
+@media (max-width: 1200px) {
+    header h1 {
+        font-size: 2.5rem; /* Adjust font size */
+    }
+
+    .container {
+        gap: 1.5rem; /* Reduce gap between items */
+    }
+
+    .product-item h3 {
+        font-size: 1.1rem; /* Adjust title font size */
+    }
+
+    .product-item img {
+        max-width: 230px; /* Adjust image size */
+    }
+}
+
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Reduce font size for smaller screens */
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* Stack product items */
+        gap: 1.2rem; /* Adjust gap */
+    }
+
+    .product-item {
+        padding: 15px; /* Reduce padding */
+    }
+
+    .product-item h3 {
+        font-size: 1rem; /* Adjust product title font size */
+    }
+
+    .product-item img {
+        max-width: 200px; /* Adjust image size */
+    }
+
+    .navigation-links a {
+        padding: 0.6rem 1.5rem; /* Adjust button padding */
+    }
+}
+
+/* For very small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem; /* Further reduce font size */
+    }
+
+    .container {
+        gap: 1rem; /* Reduce gap further */
+    }
+
+    .product-item {
+        padding: 12px; /* Further reduce padding */
+    }
+
+    .product-item h3 {
+        font-size: 0.9rem; /* Adjust title font size */
+    }
+
+    .product-item img {
+        max-width: 180px; /* Further reduce image size */
+    }
+
+    .navigation-links a {
+        padding: 0.5rem 1rem; /* Adjust button padding */
+    }
+}

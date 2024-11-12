@@ -121,3 +121,105 @@ header nav a:hover {
 .navigation-links a.back-link:hover {
   background-color: #d8b4a6;
 }
+
+/* Responsive Design */
+
+/* For tablets and smaller laptops (max-width: 1200px) */
+@media (max-width: 1200px) {
+  header h1 {
+    font-size: 2.5rem; /* Reduce font size */
+  }
+
+  header nav a {
+    font-size: 1.1rem; /* Slightly reduce font size of navigation links */
+  }
+
+  #body-fillers-korean h2 {
+    font-size: 1.8rem; /* Reduce heading size */
+  }
+
+  .product-list {
+    gap: 1.5rem; /* Reduce gap between product items */
+  }
+
+  .product-item h3 {
+    font-size: 1.1rem; /* Adjust product title font size */
+  }
+
+  .product-item img {
+    max-width: 230px; /* Adjust image size */
+  }
+}
+
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem; /* Further reduce font size for smaller screens */
+  }
+
+  header nav a {
+    font-size: 1rem; /* Reduce font size of navigation links */
+    padding: 0.5rem 0.8rem; /* Adjust padding for links */
+  }
+
+  #body-fillers-korean h2 {
+    font-size: 1.6rem; /* Reduce heading size */
+  }
+
+  .product-list {
+    grid-template-columns: 1fr; /* Stack product items in a single column */
+    gap: 1.2rem; /* Adjust gap between items */
+  }
+
+  .product-item {
+    padding: 15px; /* Reduce padding inside product items */
+  }
+
+  .product-item h3 {
+    font-size: 1rem; /* Reduce font size for product titles */
+  }
+
+  .product-item img {
+    max-width: 200px; /* Adjust image size */
+  }
+
+  .navigation-links a.back-link {
+    padding: 0.6rem 1.5rem; /* Adjust button padding */
+  }
+}
+
+/* For very small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem; /* Further reduce font size for very small screens */
+  }
+
+  header nav a {
+    font-size: 0.9rem; /* Reduce font size for mobile nav links */
+    padding: 0.4rem 0.8rem; /* Adjust padding for very small screens */
+  }
+
+  #body-fillers-korean h2 {
+    font-size: 1.4rem; /* Reduce heading size */
+  }
+
+  .product-list {
+    gap: 1rem; /* Reduce the gap for very small screens */
+  }
+
+  .product-item {
+    padding: 12px; /* Further reduce padding */
+  }
+
+  .product-item h3 {
+    font-size: 0.9rem; /* Further reduce font size */
+  }
+
+  .product-item img {
+    max-width: 180px; /* Reduce image size for very small screens */
+  }
+
+  .navigation-links a.back-link {
+    padding: 0.5rem 1rem; /* Further reduce button padding */
+  }
+}

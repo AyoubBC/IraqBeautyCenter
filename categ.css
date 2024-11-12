@@ -92,3 +92,70 @@ header h1 {
 .back-link:hover {
     background-color: #a67c52; /* Darker shade on hover */
 }
+
+/* Responsive Design */
+
+/* For tablets and smaller laptops (max-width: 1200px) */
+@media (max-width: 1200px) {
+    header h1 {
+        font-size: 2.5rem; /* Reduce font size */
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* Keep 2-column grid but reduce spacing */
+        gap: 1.5rem;
+    }
+
+    .category-card {
+        height: 180px; /* Adjust category card height */
+    }
+
+    .category-card a {
+        font-size: 1.1rem; /* Adjust font size */
+    }
+}
+
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Reduce header font size for smaller screens */
+        letter-spacing: 2px; /* Adjust letter spacing */
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* Stack the grid items in a single column */
+        gap: 1.2rem;
+    }
+
+    .category-card {
+        height: 150px; /* Adjust category card height */
+        padding: 15px; /* Reduce padding inside category card */
+    }
+
+    .category-card a {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .back-link {
+        padding: 0.6rem 1.5rem; /* Adjust button padding */
+    }
+}
+
+/* For very small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem; /* Further reduce header font size */
+    }
+
+    .category-card {
+        height: 120px; /* Further adjust category card height */
+    }
+
+    .category-card a {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+    .back-link {
+        padding: 0.5rem 1rem; /* Adjust button padding */
+    }
+}
