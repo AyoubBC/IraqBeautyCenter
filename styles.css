@@ -185,7 +185,7 @@ footer p {
 }
 
 /* Mobile responsive adjustments */
-@media (max-width: 400px) {
+@media (max-width: 860px) {
   header h1 { font-size: 2rem; }  /* Header font size for smaller screens */
   nav a { font-size: 2rem; margin: 0 2rem; } /* Adjust nav links */
 
