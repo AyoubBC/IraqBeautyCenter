@@ -74,106 +74,43 @@ nav a:hover {
   transform: translateY(-5px);
 }
 
-/* Responsive Design */
+/* Footer */
+footer {
+  padding: 2rem 0;
+  background-color: #ffffff;
+  text-align: center;
+  color: #c18e56;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensure footer takes full width */
+  position: relative; /* Prevent overlap or misalignment */
+  bottom: 0; /* Ensure it stays at the bottom */
+}
 
-/* For iPhone 10 to iPhone 13 (375px to 430px width) */
+footer p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+/* Adjustments for mobile devices */
+
+/* For screens with a max width of 430px (iPhone 10 to iPhone 13) */
 @media (max-width: 430px) {
-  header h1 {
-    font-size: 2.4rem; /* Slightly smaller header font */
-  }
-
-  nav a {
-    font-size: 1rem; /* Adjust navigation font size */
-    margin: 0 1rem; /* Adjust margin between links */
-  }
-
-  .services-container {
-    flex-direction: column; /* Stack services vertically */
-    align-items: center; /* Center services */
-  }
-
-  .service {
-    width: 85%; /* Adjust service box width */
-  }
-
-  #about p {
-    font-size: 1rem; /* Adjust paragraph font size */
-  }
-
-  form {
-    padding: 2rem; /* Reduce padding inside form */
-    max-width: 90%; /* Adjust form width on small screens */
-  }
-
-  /* Contact Links */
-  .contact-links a {
-    padding: 1rem 2rem; /* Adjust button padding */
-    font-size: 1rem; /* Ensure text is readable */
+  footer p {
+    font-size: 0.9rem; /* Adjust text size for smaller screens */
   }
 }
 
 /* For iPhone 14 and newer (375px to 430px width) */
 @media (max-width: 430px) {
-  header h1 {
-    font-size: 2rem; /* Reduce font size for smaller screens */
-  }
-
-  nav a {
-    font-size: 1rem; /* Adjust navigation link font size */
-    margin: 0 1rem; /* Adjust margin between links */
-  }
-
-  .services-container {
-    flex-direction: column; /* Stack services vertically */
-    align-items: center; /* Center services */
-  }
-
-  .service {
-    width: 80%; /* Adjust service box width */
-  }
-
-  #about p {
-    font-size: 0.9rem; /* Adjust paragraph font size */
-  }
-
-  form {
-    padding: 1.8rem; /* Reduce padding inside form */
-    max-width: 95%; /* Ensure form doesn't overflow */
-  }
-
-  /* Contact Links */
-  .contact-links a {
-    padding: 1rem 2rem; /* Adjust button padding */
+  footer p {
+    font-size: 0.9rem; /* Adjust text size for smaller screens */
   }
 }
 
 /* For iPhone 16 or larger (up to 480px) */
 @media (max-width: 480px) {
-  header h1 {
-    font-size: 1.8rem; /* Further reduce font size */
-  }
-
-  nav a {
-    font-size: 0.9rem; /* Further reduce navigation font size */
-  }
-
-  .service {
-    width: 100%; /* Full width for services on small screens */
-  }
-
-  .service img {
-    height: 150px; /* Adjust service image height */
-  }
-
-  form {
-    padding: 1.5rem; /* Further reduce padding in form */
-    max-width: 100%; /* Ensure form fits */
-  }
-
-  /* Contact Links */
-  .contact-links a {
-    padding: 1rem; /* Adjust button padding */
-    font-size: 0.9rem; /* Adjust button text for small screens */
+  footer p {
+    font-size: 0.85rem; /* Reduce font size even more */
   }
 }
-
