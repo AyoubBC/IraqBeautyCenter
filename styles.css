@@ -3,11 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif; /* Clean sans-serif font */
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-  background: linear-gradient(to bottom, #f5f5f5, #d8d8d8); /* Light gradient background */
+  background: linear-gradient(to bottom, #f5f5f5, #d8d8d8);
   color: #333;
 }
 
@@ -24,12 +24,12 @@ header {
   padding: 3rem 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
-  background-image: linear-gradient(to right, #d8b4a6, #a67c52); /* Gradient background for header */
+  background-image: linear-gradient(to right, #d8b4a6, #a67c52);
 }
 
 header h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 3rem;
+  font-size: 5vw; /* Use responsive units */
   color: #fff;
   letter-spacing: 3px;
 }
@@ -39,17 +39,18 @@ nav {
 }
 
 nav a {
-  margin: 0 2rem;
+  margin: 0 2vw; /* Adjust margins with vw units */
   color: #fff;
   font-weight: 500;
   text-decoration: none;
   transition: color 0.3s ease;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  padding: 0.5rem 0; /* Increased padding for touch targets */
 }
 
 nav a:hover {
   color: #f1f1f1;
-  border-bottom: 2px solid #f1f1f1; /* Subtle underline effect on hover */
+  border-bottom: 2px solid #f1f1f1;
 }
 
 /* Services Section */
@@ -63,7 +64,7 @@ nav a:hover {
 #services h2 {
   font-family: 'Playfair Display', serif;
   color: #ffffff;
-  font-size: 2.2rem;
+  font-size: 6vw;
   margin-bottom: 2rem;
 }
 
@@ -76,7 +77,8 @@ nav a:hover {
 
 .service {
   background-color: #ffffff;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   padding: 1.5rem;
   border-radius: 15px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
@@ -85,8 +87,8 @@ nav a:hover {
 }
 
 .service:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: scale(1.03); /* Reduce hover scale for performance */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .service img {
@@ -99,7 +101,7 @@ nav a:hover {
 
 .service h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 1.2rem;
+  font-size: 4vw;
   color: #333;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -133,11 +135,6 @@ form {
   padding: 2.5rem;
   border-radius: 15px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-}
-
-form:hover {
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
 
 form label {
@@ -176,7 +173,7 @@ form button:hover {
 
 .contact-links a {
   margin: 0.8rem;
-  padding: 1.2rem 2.5rem;
+  padding: 1.5rem 3rem; /* Increased padding for touch targets */
   background-color: #b08f82;
   color: #fff;
   border-radius: 30px;
@@ -204,85 +201,58 @@ footer p {
 }
 
 /* Responsive Design */
-
-/* For tablets and smaller laptops (max-width: 1200px) */
-@media (max-width: 1500px) {
-  header h1 {
-    font-size: 2.5rem; /* Adjust font size */
-  }
-
-  .service {
-    width: 220px; /* Adjust service box width */
-  }
-
-  .service h3 {
-    font-size: 1.1rem; /* Adjust service title font size */
-  }
-
-  .contact-links a {
-    padding: 1rem 2rem; /* Adjust button padding */
-  }
-}
-
-/* For mobile devices (max-width: 768px) */
 @media (max-width: 1000px) {
   header h1 {
-    font-size: 2rem; /* Reduce font size for smaller screens */
+    font-size: 6vw;
   }
 
   nav a {
-    font-size: 1rem; /* Adjust navigation link font size */
-    margin: 0 1rem; /* Adjust margin between links */
+    font-size: 1rem;
+    margin: 0 1vw;
   }
 
   .services-container {
-    flex-direction: column; /* Stack services vertically */
-    align-items: center; /* Center services */
-    padding: 0 10px; /* Add some padding to avoid content sticking to the edges */
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
   }
 
   .service {
-    width: 100%; /* Full width for services on mobile screens */
-    padding: 1.2rem; /* Adjust padding inside the service box */
-  }
-
-  #about p {
-    font-size: 1rem; /* Adjust paragraph font size */
+    width: 100%;
+    padding: 1.2rem;
   }
 
   form {
-    padding: 1.8rem; /* Further reduce padding inside form */
+    padding: 2rem;
   }
 
   .contact-links a {
-    padding: 1rem 2rem; /* Adjust button padding */
+    padding: 1.2rem 2rem;
   }
 }
 
-/* For very small mobile devices (max-width: 480px) */
 @media (max-width: 600px) {
   header h1 {
-    font-size: 1.8rem; /* Further reduce font size */
+    font-size: 6vw;
   }
 
   nav a {
-    font-size: 0.9rem; /* Further reduce navigation font size */
+    font-size: 0.9rem;
   }
 
   .service {
-    width: 100%; /* Full width for services */
-    padding: 1rem; /* Reduce padding for small devices */
+    padding: 1rem;
   }
 
   .service img {
-    height: 150px; /* Adjust service image height */
+    height: 150px;
   }
 
   form {
-    padding: 1.5rem; /* Further reduce padding in form */
+    padding: 1.5rem;
   }
 
   .contact-links a {
-    padding: 1rem; /* Adjust button padding */
+    padding: 1rem;
   }
 }
