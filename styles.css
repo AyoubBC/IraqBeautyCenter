@@ -203,16 +203,16 @@ footer p {
   font-size: 1rem;
 }
 
-/* Responsive Design */
+/* Adjustments for mobile devices */
 
-/* For iPhone 10 to iPhone 13 (375px to 430px width) */
+/* For screens with a max width of 430px (iPhone 10 to iPhone 13) */
 @media (max-width: 430px) {
   header h1 {
     font-size: 2.4rem; /* Slightly smaller header font */
   }
 
   nav a {
-    font-size: 1rem; /* Adjust navigation link font size */
+    font-size: 1rem; /* Adjust navigation font size */
     margin: 0 1rem; /* Adjust margin between links */
   }
 
@@ -231,10 +231,12 @@ footer p {
 
   form {
     padding: 2rem; /* Reduce padding inside form */
+    max-width: 90%; /* Adjust form width on small screens */
   }
 
   .contact-links a {
     padding: 1rem 2rem; /* Adjust button padding */
+    font-size: 1rem; /* Ensure text is readable */
   }
 }
 
@@ -264,6 +266,7 @@ footer p {
 
   form {
     padding: 1.8rem; /* Reduce padding inside form */
+    max-width: 95%; /* Ensure form doesn't overflow */
   }
 
   .contact-links a {
@@ -271,7 +274,7 @@ footer p {
   }
 }
 
-/* For iPhone 16 or large iPhone devices (width 430px) */
+/* For iPhone 16 or larger (up to 480px) */
 @media (max-width: 480px) {
   header h1 {
     font-size: 1.8rem; /* Further reduce font size */
@@ -291,9 +294,11 @@ footer p {
 
   form {
     padding: 1.5rem; /* Further reduce padding in form */
+    max-width: 100%; /* Make sure form fits */
   }
 
   .contact-links a {
     padding: 1rem; /* Adjust button padding */
+    font-size: 0.9rem; /* Adjust button text for small screens */
   }
 }
