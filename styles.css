@@ -206,7 +206,7 @@ footer p {
 /* Responsive Design */
 
 /* For tablets and smaller laptops (max-width: 1200px) */
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   header h1 {
     font-size: 2.5rem; /* Adjust font size */
   }
@@ -225,9 +225,9 @@ footer p {
 }
 
 /* For mobile devices (max-width: 700px) */
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   header h1 {
-    font-size: 2rem; /* Reduce font size for smaller screens */
+    font-size: 1rem; /* Reduce font size for smaller screens */
   }
 
   nav a {
@@ -245,15 +245,15 @@ footer p {
   }
 
   #about p {
-    font-size: 1rem; /* Adjust paragraph font size */
+    font-size: 2rem; /* Adjust paragraph font size */
   }
 
   form {
-    padding: 2rem; /* Reduce padding inside form */
+    padding: 3rem; /* Reduce padding inside form */
   }
 
   .contact-links a {
-    padding: 1rem 2rem; /* Adjust button padding */
+    padding: 2rem 4rem; /* Adjust button padding */
   }
 }
 
