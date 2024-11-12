@@ -225,7 +225,7 @@ footer p {
 }
 
 /* For mobile devices (max-width: 700px) */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   header h1 {
     font-size: 2rem; /* Reduce font size for smaller screens */
   }
