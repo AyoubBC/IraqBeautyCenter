@@ -174,14 +174,8 @@ form button:hover {
   text-align: center;
 }
 
-.contact-links {
-  display: flex;
-  flex-wrap: wrap; /* Allows the links to wrap on smaller screens */
-  justify-content: center;
-  gap: 1rem;
-}
-
 .contact-links a {
+  margin: 0.8rem;
   padding: 1.2rem 2.5rem;
   background-color: #b08f82;
   color: #fff;
@@ -189,8 +183,6 @@ form button:hover {
   font-weight: 600;
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  font-size: 1.1rem;
-  white-space: nowrap; /* Prevents text from breaking into multiple lines */
 }
 
 .contact-links a:hover {
@@ -211,16 +203,16 @@ footer p {
   font-size: 1rem;
 }
 
-/* Adjustments for mobile devices */
+/* Responsive Design */
 
-/* For screens with a max width of 430px (iPhone 10 to iPhone 13) */
+/* For iPhone 10 to iPhone 13 (375px to 430px width) */
 @media (max-width: 430px) {
   header h1 {
     font-size: 2.4rem; /* Slightly smaller header font */
   }
 
   nav a {
-    font-size: 1rem; /* Adjust navigation font size */
+    font-size: 1rem; /* Adjust navigation link font size */
     margin: 0 1rem; /* Adjust margin between links */
   }
 
@@ -239,12 +231,10 @@ footer p {
 
   form {
     padding: 2rem; /* Reduce padding inside form */
-    max-width: 90%; /* Adjust form width on small screens */
   }
 
   .contact-links a {
     padding: 1rem 2rem; /* Adjust button padding */
-    font-size: 1rem; /* Ensure text is readable */
   }
 }
 
@@ -274,7 +264,6 @@ footer p {
 
   form {
     padding: 1.8rem; /* Reduce padding inside form */
-    max-width: 95%; /* Ensure form doesn't overflow */
   }
 
   .contact-links a {
@@ -282,7 +271,7 @@ footer p {
   }
 }
 
-/* For iPhone 16 or larger (up to 480px) */
+/* For iPhone 16 or large iPhone devices (width 430px) */
 @media (max-width: 480px) {
   header h1 {
     font-size: 1.8rem; /* Further reduce font size */
@@ -302,11 +291,9 @@ footer p {
 
   form {
     padding: 1.5rem; /* Further reduce padding in form */
-    max-width: 100%; /* Make sure form fits */
   }
 
   .contact-links a {
     padding: 1rem; /* Adjust button padding */
-    font-size: 0.9rem; /* Adjust button text for small screens */
   }
 }
