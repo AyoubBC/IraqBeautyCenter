@@ -44,7 +44,7 @@ header h1 {
 nav {
   margin-top: 1.5rem;
   background-color: #a67c52; /* Match the header's background color */
-  padding: 5rem 0;
+  padding: 1rem 0;
   text-align: center;
 }
 
@@ -110,9 +110,13 @@ nav a:hover {
 .service h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.2rem;
-  color: #333;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.service h3 a {
+  color: #333; /* Set color to black */
+  text-decoration: none; /* Remove underline */
 }
 
 /* About Section */
@@ -213,61 +217,4 @@ footer {
 
 footer p {
   font-size: 1rem;
-}
-
-/* Responsive adjustments for smaller screens (phones, tablets) */
-@media (max-width: 768px) {
-  /* General adjustments */
-  .container {
-    width: 100%; /* Increase width for smaller screens */
-  }
-
-  /* Header */
-  header h1 {
-    font-size: 2rem; /* Reduce font size of the header */
-    letter-spacing: 1px;
-  }
-
-  nav a {
-    margin: 0 1rem; /* Reduce space between nav items */
-    font-size: 1rem; /* Slightly smaller font size */
-  }
-
-  /* Services Section */
-  #services {
-    padding: 3rem 0; /* Reduce padding to fit smaller screens */
-  }
-
-  .services-container {
-    flex-direction: column; /* Stack services vertically on small screens */
-  }
-
-  .service {
-    width: 100%; /* Allow service blocks to take full width */
-  }
-
-  /* About Section */
-  #about p {
-    font-size: 1rem; /* Smaller font for readability on smaller screens */
-  }
-
-  /* Appointment Section */
-  form {
-    padding: 2rem; /* Reduce form padding */
-  }
-
-  form input, form select, form button {
-    padding: 1rem; /* Reduce padding in form inputs and buttons */
-  }
-
-  /* Contact Section */
-  .contact-links a {
-    padding: 1rem 2rem; /* Adjust padding for contact links */
-    font-size: 0.9rem; /* Slightly smaller font size */
-  }
-
-  /* Footer */
-  footer p {
-    font-size: 0.9rem; /* Smaller font in the footer */
-  }
 }
