@@ -160,7 +160,7 @@ form label {
 form input,
 form select,
 form button {
-  width: 100%;
+  width: 50%;
   padding: 1.2rem;
   margin-bottom: 1.8rem;
   border-radius: 8px;
