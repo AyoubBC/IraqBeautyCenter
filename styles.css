@@ -219,7 +219,7 @@ footer p {
 @media (max-width: 768px) {
   /* General adjustments */
   .container {
-    width: 95%; /* Increase width for smaller screens */
+    width: 100%; /* Increase width for smaller screens */
   }
 
   /* Header */
