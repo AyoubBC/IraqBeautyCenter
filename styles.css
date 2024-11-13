@@ -219,7 +219,7 @@ footer p {
 @media (max-width: 768px) {
   /* General adjustments */
   .container {
-    width: 95%; /* Increase width for smaller screens */
+    width: 60%; /* Increase width for smaller screens */
   }
 
   /* Header */
@@ -243,7 +243,7 @@ footer p {
   }
 
   .service {
-    width: 100%; /* Allow service blocks to take full width */
+    width: 50%; /* Allow service blocks to take full width */
   }
 
   /* About Section */
