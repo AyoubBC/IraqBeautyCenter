@@ -240,17 +240,17 @@ footer p {
   }
 
   .service {
-    width: 80%;
+    width: 100%;
   }
 
   form {
-    width: 90%;
+    width: 100%;
     padding: 1.5rem;
   }
 
   .contact-links a {
     width: 100%;
-    display: block;
+    display: flex;
     padding: 1rem 0;
   }
 }
