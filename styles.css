@@ -13,6 +13,7 @@ html, body {
 body {
   background: linear-gradient(to bottom, #f5f5f5, #d8d8d8);
   color: #333;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -35,7 +36,7 @@ header {
 
 header h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #fff;
   letter-spacing: 3px;
 }
@@ -48,7 +49,7 @@ nav {
 }
 
 nav a {
-  margin: 0 1rem;
+  margin: 0 2rem;
   color: #fff;
   font-weight: 500;
   text-decoration: none;
@@ -63,7 +64,7 @@ nav a:hover {
 
 /* Services Section */
 #services {
-  padding: 4rem 0;
+  padding: 6rem 0;
   background-color: #ffffff;
   text-align: center;
   background-image: linear-gradient(to top, #fff, #d8b4a6);
@@ -72,8 +73,8 @@ nav a:hover {
 #services h2 {
   font-family: 'Playfair Display', serif;
   color: #ffffff;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
 }
 
 .services-container {
@@ -85,8 +86,7 @@ nav a:hover {
 
 .service {
   background-color: #ffffff;
-  width: 100%;
-  max-width: 250px;
+  width: 250px;
   padding: 1.5rem;
   border-radius: 15px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
@@ -115,13 +115,13 @@ nav a:hover {
 }
 
 .service h3 a {
-  color: #000;
+  color: #333;
   text-decoration: none;
 }
 
 /* About Section */
 #about {
-  padding: 4rem 0;
+  padding: 6rem 0;
   text-align: center;
 }
 
@@ -136,7 +136,7 @@ nav a:hover {
 /* Appointment Section */
 #appointment {
   background-color: #f5f5f5;
-  padding: 4rem 0;
+  padding: 6rem 0;
   text-align: center;
 }
 
@@ -144,7 +144,7 @@ form {
   max-width: 450px;
   margin: 0 auto;
   background-color: #ffffff;
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 15px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
@@ -186,7 +186,7 @@ form button:hover {
 
 /* Contact Section */
 #contact {
-  padding: 4rem 0;
+  padding: 6rem 0;
   text-align: center;
 }
 
@@ -219,15 +219,15 @@ footer p {
   font-size: 1rem;
 }
 
-/* Responsive Design */
+/* Responsive Styles */
 @media (max-width: 768px) {
   header h1 {
     font-size: 2rem;
   }
 
   nav a {
-    margin: 0 1rem;
     font-size: 1rem;
+    margin: 0 1rem;
   }
 
   #services h2 {
@@ -241,16 +241,47 @@ footer p {
 
   .service {
     width: 100%;
+    max-width: 300px;
   }
 
   form {
+    width: 90%;
+    padding: 2rem;
+  }
+
+  .contact-links a {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    margin: 0 0.5rem;
+  }
+
+  #services h2 {
+    font-size: 1.5rem;
+  }
+
+  .service {
     width: 100%;
+  }
+
+  form {
     padding: 1.5rem;
   }
 
   .contact-links a {
-    width: 100%;
-    display: flex;
-    padding: 1rem 0;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
   }
 }
