@@ -160,7 +160,7 @@ form label {
 form input,
 form select,
 form button {
-  width: 50%;
+  width: 100%;
   padding: 1.2rem;
   margin-bottom: 1.8rem;
   border-radius: 8px;
@@ -219,7 +219,7 @@ footer p {
 @media (max-width: 768px) {
   /* General adjustments */
   .container {
-    width: 60%; /* Increase width for smaller screens */
+    width: 100%; /* Increase width for smaller screens */
   }
 
   /* Header */
@@ -243,7 +243,7 @@ footer p {
   }
 
   .service {
-    width: 50%; /* Allow service blocks to take full width */
+    width: 100%; /* Allow service blocks to take full width */
   }
 
   /* About Section */
