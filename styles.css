@@ -20,7 +20,7 @@ body {
 
 /* Container */
 .container {
-  width: 100%;
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -219,7 +219,7 @@ footer p {
 @media (max-width: 768px) {
   /* General adjustments */
   .container {
-    width: 100%; /* Increase width for smaller screens */
+    width: 95%; /* Increase width for smaller screens */
   }
 
   /* Header */
